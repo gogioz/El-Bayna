@@ -134,7 +134,7 @@ function Contact() {
           أرسال
         </button>
       </form>
-      <div className="flex gap-4 text-2xl pt-10 order-3">
+      <div className="flex gap-4 text-2xl py-8 order-3">
         <a
           href="https://www.facebook.com/profile.php?id=61580415567624&rdid=jhFtu0v84Zwty06J&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B9rvo6x38%2F#"
           target="_blank"
