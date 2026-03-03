@@ -8,8 +8,8 @@ import { TbCertificate } from "react-icons/tb";
 // New file: WhyFeaturesSection.jsx
 function WhyFeaturesSection() {
   return (
-    <div className="flex justify-center items-center px-16 ">
-      <ul className="grid grid-cols-3 gap-12">
+    <div className="flex justify-center items-center px-4 xl:px-16 ">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-12">
         <WhyFeatureItem
           icon={<TbCertificate size={110} color="#2D4F2B" />}
           title="مسابقات وشهادات"

@@ -4,10 +4,9 @@ export default {
   theme: {
     colors: {
       bg: "#fff9f942",
-      btn: "#C1A561 ",
+      btn: "#C1A561",
       hover: "#708A58FF",
       text: "#2D4F2B",
-
       transparent: "transparent",
       black: "#000000",
       white: "#ffffff",
@@ -21,24 +20,23 @@ export default {
       keyframes: {
         slide: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" }, // adjust based on content length
+          "100%": { transform: "translateX(-50%)" },
         },
       },
       animation: {
         slide: "slide 30s linear infinite",
       },
+      screens: {
+        sm: "340px",
+        md: "430px",
+        lg: "768px",
+        xl: "1024px",
+        "2xl": "1280px",
+        "3xl": "1400px",
+        "4xl": "1730px",
+        "5xl": "1920px",
+      },
     },
-    screens: {
-      sm: { min: "340px" },
-      md: { min: "430px" },
-      lg: { min: "768px" },
-      xl: { min: "1024px" },
-      "2xl": { min: "1280px" },
-      "3xl": { min: "1400px" },
-      "4xl": { min: "1730px" },
-      "5xl": { min: "1920px" },
-    },
-    // plugins: [require("tailwind-scrollbar-hide")],
   },
   variants: {
     extend: {},

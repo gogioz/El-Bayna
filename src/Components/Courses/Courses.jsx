@@ -94,16 +94,16 @@ const Courses = () => {
           الدورات المتاحة
         </h1>
       </div>
-      <div className="grid xl:grid-cols-4 gap-y-8  xl:gap-x-24 xl:px-20">
+      <div className="grid grid-cols-1 xl:grid-cols-2 3xl:grid-cols-4 gap-y-8 gap-x-8 xl:gap-x-12 w-full px-4 xl:px-10">
         {courses.map((course, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-lg hover:shadow-xl transition w-[350px]"
+            className="bg-white rounded-xl shadow-lg hover:shadow-xl transition w-full sm:max-w-[400px] md:max-w-[550px] mx-auto"
           >
             <img
               src={course.image}
               alt={course.title}
-              className="w-full shadow-sm h-[345px]"
+              className="w-full rounded-t-xl object-conatin object-center md:h-[380px]"
             />
             <div className="px-4" dir="rtl">
               <h3 className="text-3xl xl:text-4xl font-Amiri-Regular text-text tracking-widest m-0 mt-3">

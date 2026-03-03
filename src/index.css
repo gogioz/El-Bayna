@@ -12,4 +12,13 @@
   src: url("./assets/amoshref-thulth.ttf") format("opentype");
 }
 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -39,7 +39,7 @@ function NavBar() {
     <nav className="fixed top-0 left-0 right-0  bg-white z-20 xl:shadow-md w-screen">
       <div className="flex justify-between flex-row-reverse xl:justify-normal xl:flex-row-reverse px-6 pt-2 xl:gap-x-8">
         {/* Logo */}
-        <NavLink to="/" className="w-[40%] xl:w-[12%]">
+        <NavLink to="/" className="w-[40%] lg:w-[25%] xl:w-[15%] 2xl:w-[13%]">
           <img src="hero22.png" alt="Logo" className="w-full" />
         </NavLink>
 
@@ -76,7 +76,7 @@ function NavBar() {
                   className="no-underline text-text cursor-pointer"
                 >
                   <div className="border-animation py-2">
-                    <span className="text-text">{name}</span>
+                    <span className="text-white">{name}</span>
                   </div>
                 </NavLink>
               )}

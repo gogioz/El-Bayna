@@ -1,26 +1,40 @@
 export const WWD = () => {
   return (
-    <div className="flex flex-col-reverse gap-y-0 xl:flex-row-reverse xl:items-center xl:justify-center w-full xl:gap-x-28">
+    <div className="flex flex-col-reverse xl:flex-row-reverse items-center justify-between w-full gap-y-20 xl:gap-x-16 px-6 xl:px-20 sm:pt-16 lg:pt-28 pb-12 xl:py-0">
       {/* Hero Animation */}
-      <div className="flex justify-center items-center xl:w-[40%]">
+      <div className="flex justify-center items-center w-full xl:w-[45%]">
         <img
           src="animited-hero.png"
           alt="Hero Animation"
-          className="w-[80%] xl:w-full"
+          className="w-[70%] sm:w-[100%] md:w-[90%] lg:w-[65%] xl:w-full drop-shadow-lg"
         />
       </div>
 
-      {/* Logo & List */}
-      <div className="flex flex-col-reverse w-[100%] xl:w-[40%]" dir="rtl">
-        <div className="hidden xl:flex xl:justify-center xl:mb-6">
-          <img src="hero22 - Copy.png" alt="Academy Logo" className="w-[55%]" />
-        </div>
-        <ul className="list-disc list-inside font-Amiri-Bold text-right text-2xl leading-[50px] xl:text-4xl xl:leading-[80px] xl:text-right">
-          <li>تيسير حفظ القرآن الكريم.</li>
-          <li>حلقات فردية للنساء والأطفال.</li>
-          <li>دراسة أحكام التجويد.</li>
-          <li>تعليم اللغة العربية.</li>
-          <li>ما لا يسع الطفل المسلم جهله.</li>
+      {/* List */}
+      <div
+        className="flex flex-col items-end w-full xl:w-[45%] mr-0 xl:mr-8"
+        dir="rtl"
+      >
+        <ul
+          className="list-none w-full font-Amiri-Bold  sm:text-right space-y-4 xl:space-y-6"
+          dir="rtl"
+        >
+          {[
+            "تيسير حفظ القرآن الكريم.",
+            "حلقات فردية للنساء والأطفال.",
+            "دراسة أحكام التجويد.",
+            "تعليم اللغة العربية.",
+            "ما لا يسع الطفل المسلم جهله.",
+          ].map((item, i) => (
+            <li
+              key={i}
+              className="flex items-center justify-center gap-x-3 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-text"
+              dir="rtl"
+            >
+              <span className="w-2 h-2 xl:w-4 xl:h-4 rounded-full bg-text shrink-0" />
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

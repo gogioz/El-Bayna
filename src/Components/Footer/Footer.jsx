@@ -14,7 +14,7 @@ const Footer = () => {
         "service_6zp3u3s", // from EmailJS
         "template_o5lo6dq", // from EmailJS
         form.current,
-        "uE105nhzu8mwmZfTE" // from EmailJS
+        "uE105nhzu8mwmZfTE", // from EmailJS
       )
       .then(
         () => {
@@ -23,22 +23,22 @@ const Footer = () => {
         },
         () => {
           console.log("حدث خطأ! حاول مرة أخرى.");
-        }
+        },
       );
   };
   return (
     <footer className="bg-white text-text pb-12 xl:px-8 ">
-      <div className="xl:container xl:mx-auto flex flex-col-reverse justify-center items-center xl:grid xl:grid-cols-3  gap-8 xl:items-start">
-        <div className="text-center flex flex-col justify-around h-full order-1">
-          <p className="text-2xl xl:text-4xl font-Amiri-Bold">
+      <div className="xl:container xl:mx-auto flex flex-col-reverse justify-center items-center xl:grid xl:grid-cols-3 gap-8 xl:items-center">
+        <div className="text-center flex flex-col justify-around h-full order-1 sm:gap-y-6">
+          <p className="sm:text-2xl  lg:text-5xl font-Amiri-Bold">
             © جميع الحقوق محفوظة لأكاديمية البينة
           </p>
-          <p className="text-2xl xl:text-4xl text-center font-Amiri-Bold ">
+          <p className="text-2xl lg:text-3xl xl:text-4xl text-center font-Amiri-Bold ">
             تصميم وبرمجة{" "}
             <a
               target="_blank"
-              href="https://hagersportfolio.netlify.app/"
-              className="text-text hover:text-hover "
+              href="https://hagerfathi.netlify.app/"
+              className="text-text hover:text-hover underline "
             >
               هاجر فتحي
             </a>
@@ -46,11 +46,15 @@ const Footer = () => {
         </div>
         {/* Social + Logo */}
         <div className="flex flex-col items-center justify-center gap-6 xl:pt-10">
+<<<<<<< HEAD
           <img
             src="/hero22.png"
             alt="Logo"
             className="w-[80%]"
           />
+=======
+          <img src="hero22.png" alt="Logo" className="w-[80%]" />
+>>>>>>> c6b0f81 (uptae responsive)
 
           {/* Social Icons */}
           <div className="flex gap-4 text-2xl pt-10 order-3">
@@ -63,7 +67,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/albayina_quran_1?igsh=NnEwOTZoYzk2Z3U4"
               target="_blank"
               className="hover:text-text hover:bg-hover text-white bg-text p-3 flex radius-lg rounded-lg"
               aria-label="Instagram"
@@ -81,14 +85,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-[100%] flex justify-center items-center flex-col order-2">
-          <h3 className="text-4xl font-Amiri-Bold text-center xl:w-[60%] w-[100%]">
+        <div className="w-full flex justify-center items-center flex-col order-2 sm:py-10 xl:py-0">
+          <h3 className="text-4xl font-Amiri-Bold text-center w-full mb-4">
             تواصل معنا
           </h3>
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col gap-4 w-[60%]"
+            className="flex flex-col gap-4 w-[80%] xl:w-[70%]"
             dir="rtl"
           >
             <input
@@ -107,7 +111,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-text hover:bg-hover hover:text-white transition-colors p-3 rounded text-white w-[40%] text-lg hover:border-white border-white"
+              className="bg-text hover:bg-hover hover:text-white transition-colors p-3 rounded text-white w-full xl:w-[40%] xl:self-center text-lg hover:border-white border-white"
             >
               إرسال
             </button>

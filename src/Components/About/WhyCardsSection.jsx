@@ -46,7 +46,7 @@ const cardData = [
 
 function WhyCardsSection() {
   return (
-    <ul className="list-none grid grid-cols-5 gap-x-10 text-white">
+    <ul className="list-none grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-6 xl:gap-x-10 text-white px-4">
       {cardData.map((item, index) => (
         <li
           key={index}

@@ -54,12 +54,12 @@ const Opinions = () => {
           {loopedOpinions.map((opinion, index) => (
             <div
               key={index}
-              className="w-[200px] h-[250px] px-4 xl:w-[450px] xl:h-[225px] bg-white text-text xl:p-6 rounded-xl shadow-md flex-shrink-0"
+              className="w-[280px] h-[220px] px-4 xl:w-[450px] xl:h-[225px] bg-white text-text xl:p-6 p-4 rounded-xl shadow-md flex-shrink-0 flex flex-col justify-between"
             >
-              <p className="text-2xl xl:text-3xl font-Amiri-Bold xl:mb-3 leading-10">
+              <p className="text-xl xl:text-3xl font-Amiri-Bold xl:mb-3 leading-8 xl:leading-10">
                 {opinion.content}
               </p>
-              <p className="text-right text-2xl xl:text-4xl font-Amiri-Bold">
+              <p className="text-right text-xl xl:text-4xl font-Amiri-Bold">
                 - {opinion.name}
               </p>
             </div>

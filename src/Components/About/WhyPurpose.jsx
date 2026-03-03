@@ -18,13 +18,13 @@ export const WhyPurpose = () => {
     },
   };
   return (
-    <div className="flex flex-col justify-between text-4xl text-right text-text w-[55%] leading-10 font-Amiri-Bold bg-white pr-4 rounded-lg  ">
-      <div className="flex justify-start items-center gap-6 flex-row-reverse pt-6 ">
+    <div className="flex flex-col justify-between text-2xl xl:text-4xl text-right text-text w-full xl:w-[55%] leading-8 xl:leading-10 font-Amiri-Bold bg-white pr-4 rounded-lg  ">
+      <div className="flex justify-start items-center gap-4 xl:gap-6 flex-row-reverse pt-6 flex-wrap ">
         {["الأهداف", "الرسالة", "الرؤية"].map((item) => (
           <button
             key={item}
             onClick={() => setSelected(item)}
-            className={`px-6 py-3 font-Amiri-Bold rounded-lg text-2xl outline-none border-none cursor-pointer transition-all duration-200 ${
+            className={`px-4 xl:px-6 py-2 xl:py-3 font-Amiri-Bold rounded-lg text-xl xl:text-2xl outline-none border-none cursor-pointer transition-all duration-200 ${
               selected === item
                 ? "bg-hover text-white ring-4 ring-hover font-bold scale-105"
                 : "bg-text text-white hover:bg-hover hover:text-white"
@@ -34,7 +34,7 @@ export const WhyPurpose = () => {
           </button>
         ))}
       </div>
-      <div className="h-[450px] ">
+      <div className="min-h-[250px] xl:h-[450px] overflow-y-auto py-2 ">
         {content[selected].text.split("\n").map((line, index) => (
           <p key={index} className="" dir="rtl">
             {line}

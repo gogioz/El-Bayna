@@ -20,8 +20,8 @@ function Why() {
         <WhyFeaturesSection />
       </div>
 
-      <div className="text-white text-3xl text-center py-4 bg-white bg-cover mx-32 rounded-2xl  ">
-        <div className="flex flex-col md:flex-row items-center justify-around gap-12 h-[550px] transition-all duration-300 ease-in-out ">
+      <div className="text-white text-3xl text-center py-4 bg-white bg-cover mx-4 xl:mx-32 rounded-2xl  ">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-8 xl:gap-12 py-6 xl:h-[550px] transition-all duration-300 ease-in-out ">
           <WhyVideo />
           <WhyPurpose />
         </div>
