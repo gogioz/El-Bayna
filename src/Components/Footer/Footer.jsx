@@ -46,15 +46,8 @@ const Footer = () => {
         </div>
         {/* Social + Logo */}
         <div className="flex flex-col items-center justify-center gap-6 xl:pt-10">
-<<<<<<< HEAD
-          <img
-            src="/hero22.png"
-            alt="Logo"
-            className="w-[80%]"
-          />
-=======
           <img src="hero22.png" alt="Logo" className="w-[80%]" />
->>>>>>> c6b0f81 (uptae responsive)
+
 
           {/* Social Icons */}
           <div className="flex gap-4 text-2xl pt-10 order-3">
