@@ -28,7 +28,7 @@ export const WWD = () => {
           ].map((item, i) => (
             <li
               key={i}
-              className="flex items-center justify-center gap-x-3 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-text"
+              className="flex items-center justify-start gap-x-3 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-text"
               dir="rtl"
             >
               <span className="w-2 h-2 xl:w-4 xl:h-4 rounded-full bg-text shrink-0" />
