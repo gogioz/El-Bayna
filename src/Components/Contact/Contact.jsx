@@ -204,33 +204,6 @@ function Contact() {
           أرسال
         </button>
       </form>
-<<<<<<< HEAD
-      <div className="flex gap-4 text-2xl py-8 order-3">
-        <a
-          href="https://www.facebook.com/profile.php?id=61580415567624&rdid=jhFtu0v84Zwty06J&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B9rvo6x38%2F#"
-          target="_blank"
-          className="hover:text-text hover:bg-hover text-white bg-text p-3 flex radius-lg rounded-lg"
-          aria-label="Facebook"
-        >
-          <FaFacebookF />
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          className="hover:text-text hover:bg-hover text-white bg-text p-3 flex radius-lg rounded-lg"
-          aria-label="Instagram"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="https://wa.me/201005790867"
-          target="_blank"
-          className="hover:text-text hover:bg-hover text-white bg-text p-3 flex radius-lg rounded-lg"
-          aria-label="WhatsApp"
-        >
-          <FaWhatsapp />
-        </a>
-=======
 
       <div className="flex flex-col gap-y-4">
         <div className="flex justify-center items-center ">
@@ -262,7 +235,6 @@ function Contact() {
             <FaWhatsapp />
           </a>
         </div>
->>>>>>> c6b0f81 (uptae responsive)
       </div>
     </div>
   );
